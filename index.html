@@ -9,28 +9,36 @@
 </head>
 <body>
 	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-3">
-					<button id="encuentrame">Encuéntrame</button>
+		<div class="row">
+			<div class="col-md-3">
+				<button id="encuentrame">Encuéntrame</button>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
 					<label for="orginen">Origen</label>
-					<input id="origen" class="cajas" type="text" placeholder="introduce una ubicación">
-					<label for="destino">Destino</label>
-					<input id="destino" class="cajas" type="text" placeholder="introduce una ubicación">
-					<button id="ruta">Ruta</button>
+					<input id="origen" class="controls" class="form-control" type="text" placeholder="introduce una ubicación">
 				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="destino">Destino</label>
+					<input id="destino" class="controls" class="form-control" type="text" placeholder="introduce una ubicación">
+				</div>	
+			</div>
+			<div class="col-md-3">
+				<button id="ruta">Ruta</button>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12" id="map">
-			
+
 				</div>
 			</div>
 		</div>
-	</section>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaOnkj6jsbzeQDtSkkzs6T4tugOkCWu8A&callback=initMap"
-	type="text/javascript"></script>
+	</section> 
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXjdsdgVH_CRPWX_goHw-VqVy-01Hl_kU&libraries=places&callback=initMap" async defer></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
